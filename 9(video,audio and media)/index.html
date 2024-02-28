@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abt svg and iframe</title>
+</head>
+<body>
+    <video src="video.mp4" width="500" controls loop poster="image.jpg"></video>
+    <!-- video attributes list:
+    1.src - specifies the path to the video 
+    2.controls - adds video controls like play, pause and volume
+    3.autoplay - automatically starts playing the video when the website loads.
+    4.loop - repeats the video once it ends.
+    5.muted - mutes the video.
+    6.poster - specifies an image to be displayed before the video starts playing(eg:thumbnail)
+    7.height and width - specifies dimension of video. -->
+    <audio src="fuiyoh.mp3"controls loop ></audio>
+    <!-- 1-5 same attributes as video.
+    6.preload - specifies if and how the audio should be loaded when the page loads.(more info on CWH.com) -->
+    <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" fill="red" stroke="black" stroke-width="3"/>
+    </svg>
+    <img src="image.svg" alt="svg img">
+    <!-- svg is used for high graphics image drawing -->
+    <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" frameborder="0" width="590" height="350"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=Qu7MKluRHyPpO2EZ&amp;start=742" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- iframe is for embedding different websites and youtube videos. -->
+</body>
+</html>
