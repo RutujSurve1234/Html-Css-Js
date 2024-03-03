@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        div{
+            /* Element Selector */
+            /* background-color: red; */
+        }
+        .red{
+            /* Class Selector */
+            background-color: red;
+        }
+            /* ID Selector */
+            #green{
+                background-color: green;
+            }
+            /* Child Selector */
+            div > p{ 
+                color: rgb(139, 36, 36);
+                background-color: blanchedalmond;
+            }
+            /* In this when p is directly inside div then only it works 
+            Eg:-<div><p></p></div> (or else we use descendant selector) */
+            /* Descendant Selector */
+            div p {
+                color: rgb(43, 25, 2);
+                background-color: blueviolet;
+            }
+            /* Universal Selector */
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            /* Pseudo Selector */
+            a:visited{
+                color: rgb(236, 250, 41);
+            }
+            /* After a certain link is visited then it changes its color to the above given color  */
+            a:link{
+                color: blueviolet;
+            }
+            /* IF a certain link is not visited then it appears in the above color */
+            a:active{
+                background-color: aqua;
+            }
+            /* while clicking on the link its background color becomes as given  */
+            a:hover{
+                background-color: crimson;
+            }
+            /* While hovering over the link its color becomes as given  */
+            p:first-child{
+                background-color: aquamarine;
+            }
+    </style>
+</head>
+<body>
+   <main>
+       <p>I am First </p>
+       <p>I am Second</p>
+</main> 
+  <div class="red">
+    I am a div. 
+    <p>
+        I am a para inside div.
+    </p>
+  </div>  
+  <div id="green">
+    I am another div.
+    <article>
+    <p>
+        I am a para inside another div.
+    </p>
+    </article>
+  </div>
+  <a target="_blank" href="https://google.com">Go to Google</a>
+  <a target="_blank" href="https://wikipedia.com">Go to Wikipedia</a>
+
+</body>
+</html>
